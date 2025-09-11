@@ -103,7 +103,7 @@ java -jar target/<service-name>.jar`
 
 ## Video For the assignment
 
-[Watch the Demo Video](https://drive.google.com/file/d/1KPJCb7pRBHHsuUTaZo3M19D8YmF9uA6e/view?usp=drive_link)
+[Watch the Video](https://drive.google.com/file/d/1KPJCb7pRBHHsuUTaZo3M19D8YmF9uA6e/view?usp=drive_link)
 
 
 ## License
