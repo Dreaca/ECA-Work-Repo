@@ -50,3 +50,53 @@ This repository contains four projects:
 
 - Backend: run `mvn -q -e -DskipTests package` at repo root to build services.
 - Frontend: run `npm install` then `npm run dev` inside `frontend-app`.
+
+## Switching Environments (Spring Profiles)
+
+- Each backend service can run in different environments using Spring profiles. The available profiles are:
+
+  - dev – Local/Docker development
+
+  - gcp – Google Cloud Platform
+
+  - aws – AWS deployment
+
+## How to set the active profile:
+
+- Via application.properties (less flexible)
+
+`spring.profiles.active=aws`
+
+
+- Via command line (recommended)
+
+- #### Run with AWS profile
+`mvn spring-boot:run -Dspring-boot.run.profiles=aws`
+
+- #### Run with GCP profile
+`mvn spring-boot:run -Dspring-boot.run.profiles=gcp`
+
+- #### Run with dev profile
+`mvn spring-boot:run -Dspring-boot.run.profiles=dev`
+
+
+- Via environment variable
+
+`export SPRING_PROFILES_ACTIVE=aws
+java -jar target/<service-name>.jar`
+
+
+**Change the profile to aws, gcp, or dev depending on where you want the service to run. This applies to course-service, student-service, and media-service.**
+
+## **Notes**
+
+- Make sure to configure database credentials and endpoints in the respective `application-<profile>.properties`.
+
+- For media-service, ensure the `MEDIA_STORAGE_DIR` exists or is writable if you override it.
+
+- Frontend communicates with backend services on their respective ports (`8081–8083`). Update API URLs in `frontend-app/src/`config if needed.
+
+## Additional
+
+- GCP currently working on Public API to work it on your machine you will need to create a GCP SQL database then whitelist your public (Not the local ip) ip in the networking tab of your mysql instance.
+- 
