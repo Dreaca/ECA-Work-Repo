@@ -99,4 +99,13 @@ java -jar target/<service-name>.jar`
 ## Additional
 
 - GCP currently working on Public API to work it on your machine you will need to create a GCP SQL database then whitelist your public (Not the local ip) ip in the networking tab of your mysql instance.
-- 
+- Sensitive info such as IP addresses and Passwords are removed from `application-<profile>.properties` files. Use your own.
+
+## Video For the assignment
+
+[Watch the Demo Video](https://drive.google.com/file/d/1KPJCb7pRBHHsuUTaZo3M19D8YmF9uA6e/view?usp=drive_link)
+
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
