@@ -110,7 +110,7 @@ java -jar target/<service-name>.jar`
 
 This project is licensed under the [MIT License](LICENSE).
 
-##Details About the Assignee
--Name : W.P. Buddhika Pathum
--Reg. No. : 2301671076
--Email : buddhikadreaca@gmail.com
+## Details About the Assignee
+- Name : W.P. Buddhika Pathum
+- Reg. No. : 2301671076
+- Email : buddhikadreaca@gmail.com
